@@ -1,10 +1,23 @@
-import React from "react";
-import { DocsContainer as BaseContainer } from "@storybook/addon-docs/blocks";
+//@ts-nocheck
+
+import React, { FunctionComponent, ReactElement } from "react";
+import {
+  DocsContainer as BaseContainer,
+  DocsContextProps,
+  DocsContainerProps,
+} from "@storybook/addon-docs/blocks";
 import { useDarkMode } from "storybook-dark-mode";
 import { themes } from "@storybook/theming";
 import { AnyFramework } from "@storybook/csf";
 
-export const DocsContainer = ({ children, context }) => {
+interface BaseContainerProps extends DocsContainerProps<AnyFramework> {
+  children?: React.ReactNode;
+}
+
+export const DocsContainer: FunctionComponent<BaseContainerProps> = ({
+  children,
+  context,
+}): ReactElement => {
   const dark = useDarkMode();
 
   return (

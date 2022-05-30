@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# © Picky Nicky's Storybook
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a shell for projects related to the © Picky Nick's brand.
+It was built as a learning opportunity and to be used for prototyping.
 
-## Available Scripts
+## Configured Software
 
-In the project directory, you can run:
+This shell includes a number of open source projects that have been configured in a
+specific manner as to support the needs and desires of future projects.
 
-### `npm start`
+The primary tools configured herein are as follows:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React v18+
+- Storybook v6.5+
+- Tailwind CSS v3+
+- TypeScript v.4+
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Package Configurations
 
-### `npm test`
+Some notable configurations for the primary stack are as follows:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##### React
 
-### `npm run build`
+Initialized via Create React App
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##### Storybook
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Configured to play well React, TypeScript, and Tailwind
+Configured with storybook-dark-mode, which is setup to respect dark mode in the main and preview windows
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[^1] `// TODO: Fix Type Definition in DocsContainer.tsx`
 
-### `npm run eject`
+##### Tailwind
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Configured to use dark mode as a class set on the HTML element
+Configured with Prettier to use automatic class sorting
+Configured to include all color classes to facilitate play in storybook
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##### TypeScript
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Configured for JSX
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[^1]: To override the display of Storybook's Docs Container to obey the current theme (dark mode), I used this [gist](https://gist.github.com/fedek6/2414c46b8a561b7416475bffce750178) from [Konrad Fedorczyk](https://github.com/fedek6). However, I could not for the life of me figure out how to make TypeScript happy, and after a few hours I left it as a TODO. Please feel free to throw up a PR if you can fix it.
