@@ -1,4 +1,4 @@
-# © Picky Nicky's Storybook
+# Picky Nicky's™ Storybook
 
 This project is a shell for projects related to the © Picky Nick's brand.
 It was built as a learning opportunity and to be used for prototyping.
@@ -19,24 +19,24 @@ The primary tools configured herein are as follows:
 
 Some notable configurations for the primary stack are as follows:
 
-##### React
+#### React
 
 Initialized via Create React App
 
-##### Storybook
+#### Storybook
 
 Configured to play well React, TypeScript, and Tailwind
 Configured with storybook-dark-mode, which is setup to respect dark mode in the main and preview windows
 
 [^1] `// TODO: Fix Type Definition in DocsContainer.tsx`
 
-##### Tailwind
+#### Tailwind
 
 Configured to use dark mode as a class set on the HTML element
 Configured with Prettier to use automatic class sorting
 Configured to include all color classes to facilitate play in storybook
 
-##### TypeScript
+#### TypeScript
 
 Configured for JSX
 
